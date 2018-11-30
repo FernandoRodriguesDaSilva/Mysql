@@ -77,3 +77,19 @@ where sexo = 'M';
 SELECT nome,sexo, endereco FROM cliente
 where endereco LIKE '%RJ%';
 
+/* operadores lógicos - OR / OU */
+
+select nome, email from cliente 
+where sexo = 'M' or endereco like '%RJ';
+
+select nome , email from cliente 
+where sexo = 'F' or endereco like '%brotas';
+
+/* operadores lógicos - AND / E */
+
+select nome, email from cliente 
+where sexo = "M" and endereco like "%RJ";
+
+
+
+
